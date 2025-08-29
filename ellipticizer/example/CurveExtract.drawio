@@ -1,0 +1,77 @@
+<mxfile host="65bd71144e">
+    <diagram id="GZj7vEFGsbnFW80YpsLv" name="第 1 页">
+        <mxGraphModel dx="696" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 15px; line-height: 23px;&quot;&gt;&lt;span style=&quot;color: #2b91af;&quot;&gt;Ellipselizer&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="169" y="60" width="200" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="构造函数" style="rounded=0;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="40" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="getCurveMap()" style="rounded=0;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="40" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="ContourObject" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="379" y="60" width="200" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="4" source="5" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="构造函数" style="rounded=0;whiteSpace=wrap;html=1;" parent="4" vertex="1">
+                    <mxGeometry x="40" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="UpdateCurvature()&lt;br&gt;估计曲率" style="rounded=0;whiteSpace=wrap;html=1;" parent="4" vertex="1">
+                    <mxGeometry x="40" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="二值轮廓图像" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="生成多个&lt;br&gt;轮廓对象" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="曲率&lt;br&gt;可视化结果" style="shape=card;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="480" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="11" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="CurvatureExtractor.cpp" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="60" width="470" height="510" as="geometry">
+                        <mxRectangle x="590" y="60" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="工具函数" style="swimlane;whiteSpace=wrap;html=1;" parent="16" vertex="1">
+                    <mxGeometry x="20" y="40" width="200" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="FindReject()&lt;br&gt;寻找停止点" style="rounded=0;whiteSpace=wrap;html=1;" parent="20" vertex="1">
+                    <mxGeometry x="40" y="45" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="FindNext()" style="rounded=0;whiteSpace=wrap;html=1;" parent="20" vertex="1">
+                    <mxGeometry x="40" y="135" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="LineDetector" style="swimlane;whiteSpace=wrap;html=1;" parent="16" vertex="1">
+                    <mxGeometry x="250" y="40" width="200" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="push()" style="rounded=0;whiteSpace=wrap;html=1;" parent="22" vertex="1">
+                    <mxGeometry x="40" y="45" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="pop()" style="rounded=0;whiteSpace=wrap;html=1;" parent="22" vertex="1">
+                    <mxGeometry x="40" y="135" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="isLine()" style="rounded=0;whiteSpace=wrap;html=1;" parent="22" vertex="1">
+                    <mxGeometry x="40" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
